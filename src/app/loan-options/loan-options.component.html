@@ -1,0 +1,31 @@
+<p-table [value]="loanProviders" responsiveLayout="scroll" >
+    <ng-template pTemplate="caption" *ngIf="isEligible">
+        <div class="flex align-items-center justify-content-between">
+            Eligible banks to apply
+            <p-button icon="pi pi-arrow-left" label="Back" (click)="goBackToEnquiryForm()"></p-button>
+        </div>
+    </ng-template>
+    <ng-template pTemplate="body" let-loanProvider>
+        <tr>
+            <td><img [src]="'assets/img/' + loanProvider.image" [alt]="loanProvider.bank" width="100" class="shadow-4" /></td>
+            <td>{{loanProvider.bank}}</td>
+            <td>{{loanProvider.amount | currency:'INR'}}</td>
+            <td>{{loanProvider.ROI }} %</td>
+            <td>{{loanProvider.tenure}} Years</td>
+            <td><p-button icon="pi pi-check" label="Apply now " (click)="showModal()"></p-button></td>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="summary">
+        <div class="flex align-items-center justify-content-between" *ngIf="isEligible; else notEligible">
+            Congratulations!!, You are eligible and there are {{loanProviders ? loanProviders.length : 0 }} loan providers.
+        </div>
+        <ng-template #notEligible>
+            Sorry !! You are not eligible, Please check your credit score  <a href="https://www.cibil.com/freecibilscore"><u>here</u></a>
+            <p-button icon="pi pi-arrow-left" label="Back" class="back-to-enquiry-btn" (click)="goBackToEnquiryForm()"></p-button>
+        </ng-template>
+    </ng-template>
+</p-table>
+<p-toast class="p-toast-icon" ></p-toast>
+
+
+

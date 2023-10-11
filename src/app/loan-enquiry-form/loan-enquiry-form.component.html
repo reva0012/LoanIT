@@ -1,0 +1,101 @@
+
+    <!-- About Law Start-->
+    <div class="about-low-area section-padding2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="about-caption mb-50">
+                      
+                      
+                      <!-- FORM -->          
+                        <form [formGroup]="loanEnquiryForm" novalidate>    
+    
+                          <!-- Personal Details -->
+                          <div class="section-tittle mb-35">
+                            <h1> Personal Details </h1>
+                          </div>
+                          Name <span class="red">*</span>
+                          <br>
+                          <input type="text" class="mt-3 mr-8" formControlName="firstName"  pInputText placeholder="First Name" > 
+                          <input type="text" formControlName="middleName"  pInputText placeholder="Middle Name"> 
+                          <input type="text" class="mt-3" formControlName="lastName"  pInputText placeholder="Last Name" > 
+                          
+                          <br>
+          
+                          <br> Date of Birth <span class="red">*</span>
+                          <br>
+                          <input type="date" formControlName="dob" placeholder="DD/MM/YYYY" 
+                          class="p-inputtext p-component p-element mt-3 mr-8" >
+
+                          <!-- <input type = "text"  name="dob" placeholder="DD/MM/YYYY"> -->
+                          <br>
+                                                      
+                          <br> Address <span class="red">*</span>
+                          <br><input type="text" class="mt-3" formControlName="address"  pInputText placeholder="Address" > 
+                          <br><input type="text" class="mt-3" formControlName="city"  pInputText placeholder="City" > 
+                          <br><input type="text" class="mt-3" formControlName="state"  pInputText placeholder="State" > 
+                          <br><input type="text" class="mt-3" formControlName="pincode"  pInputText placeholder="Pincode" > 
+                          <br>
+          
+                          <br> Contact Number <span class="red">*</span>
+                          <br><input type="text" class="mt-3" formControlName="mobile"  pInputText placeholder="Contact Number" >
+                          <br>
+          
+                          <br> Email ID <span class="red">*</span>
+                          <br>
+                          <input type="text" class="mt-3" formControlName="email"  pInputText placeholder="Email" >
+                          <br> 
+                          <br><br><br><br>
+  
+                          <!-- Employment Status -->
+                          <div class="section-tittle mb-35">
+                            <h1>Employment Status</h1>
+                          </div>
+            
+                          <br><p-radioButton class="mt-2" formControlName="employmentStatus" value="Full Time" label="Full Time"></p-radioButton>
+                          <br><p-radioButton class="mt-2"  formControlName="employmentStatus" value="Part Time" label="Part Time"></p-radioButton>
+                          <br><p-radioButton class="mt-2" formControlName="employmentStatus" value="Self Employed" label="Self Employed"></p-radioButton>
+                          <br><p-radioButton class="mt-2" formControlName="employmentStatus" value="Unemployed" label="Unemployed"></p-radioButton>
+                          <br><p-radioButton class="mt-2" formControlName="employmentStatus" value="Other" label="Other"></p-radioButton>
+
+                          <br><br><br>
+                          
+  
+                           <!-- Annual Income and Loan Amount  -->
+                          <div class="section-tittle mb-35">
+                            <h1>Annual Income</h1>
+                          </div>
+                          Annual Income 
+                          <br><input type="text" formControlName="annualIncome"  pInputText placeholder="₹" > 
+                          <br><br> <br><br>
+                          
+                          <!-- Credit Score  -->
+                          <div class="section-tittle mb-35">
+                            <h1>Credit Score</h1>
+                          </div>
+                  
+
+                          <br><p-radioButton class="mt-2"  formControlName="creditScore" value="A" label="300 - 579"></p-radioButton>
+                          <br><p-radioButton class="mt-2"  formControlName="creditScore" value="B"label="580 - 699"></p-radioButton>
+                          <br><p-radioButton class="mt-2"  formControlName="creditScore" value="C" label="670 - 739"></p-radioButton>
+                          <br><p-radioButton class="mt-2"  formControlName="creditScore" value="D" label="740 - 799"></p-radioButton>
+                          <br><p-radioButton class="mt-2" formControlName="creditScore" value="E" label="800 - 850"></p-radioButton>
+
+                          <br><br>
+                          <a href="https://www.cibil.com/freecibilscore" target= "_blank">Click here to check your credit score </a>
+                          <br><br><br><br>
+  
+                          <button class= "btn hero-btn" type="button" data-animation="fadeInLeft" data-delay=".8s" (click)="getLoanOptions()">Continue</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p-toast class="p-toast-icon"></p-toast>
+
+  
+  
+  
+  

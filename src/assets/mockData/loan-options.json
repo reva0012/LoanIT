@@ -1,0 +1,62 @@
+[
+    {
+        "bank": "State bank of india",
+        "ROI": "8.75",
+        "tenure": "6",
+        "rating": "A",
+        "mfactor":"0.3",
+        "image": "sbi.png"
+    },
+    {
+        "bank": "Kotak mahindra bank",
+        "ROI": "8.25",
+        "tenure": "8",
+        "rating": "B",
+        "mfactor":"0.65",
+        "image": "kotak.png"
+    },
+    {
+        "bank": "HDFC bank",
+        "ROI": "8.40",
+        "tenure": "5",
+        "rating": "B",
+        "mfactor":"0.85",
+        "image": "hdfc.png"
+    },
+    {
+        "bank": "Axis bank",
+        "ROI": "8.80",
+        "tenure": "6",
+        "rating": "B",
+        "mfactor":"0.9",
+        "image": "axis.png"
+
+    },
+    {
+        "bank": "Canara bank",
+        "ROI": "9",
+        "tenure": "7",
+        "rating": "C",
+        "mfactor":"0.95",
+        "image": "canara.png"
+
+    },
+    {
+        "bank": "Punjab national bank",
+        "ROI": "8.25",
+        "tenure": "6",
+        "rating": "D",
+        "mfactor":"0.3",
+        "image": "pnb.png"
+
+    },
+    {
+        "bank": "ICICI bank",
+        "ROI": "9",
+        "tenure": "6",
+        "rating": "B",
+        "mfactor":"0.65",
+        "image": "icici.png"
+
+    }
+]
